@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pub Demo Beograd - Galerija fotografija. Pogledajte našu atmosferu, enterijer, hranu, piće i nezaboravne trenutke iz puba.">
+    <meta name="keywords" content="Pub Demo, galerija, fotografije, Beograd, pub, enterijer, hrana, događaji">
+    <meta name="author" content="Pub Demo Beograd">
+    
+    <title>Galerija | Pub Demo Beograd</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://svilenkovic.com/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="galerija.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header header--solid" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index" class="nav__logo">
+                    <i class="fas fa-beer-mug-empty"></i>
+                    <span>Pub Demo</span>
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index" class="nav__link">Početna</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="meni" class="nav__link">Meni</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="porudzbine" class="nav__link">Poruči Online</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="o-nama" class="nav__link">O Nama</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="galerija" class="nav__link active">Galerija</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="kontakt" class="nav__link">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav__actions">
+                    <a href="porudzbine" class="btn btn--primary btn--sm">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>Poruči</span>
+                    </a>
+                    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header__overlay"></div>
+        <div class="container">
+            <div class="page-header__content" data-aos="fade-up">
+                <h1 class="page-header__title">Galerija</h1>
+                <p class="page-header__subtitle">Pogledajte atmosferu i trenutke iz Pub Demoa</p>
+                <nav class="breadcrumb">
+                    <a href="index">Početna</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Galerija</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery-section">
+        <div class="container">
+            <!-- Gallery Filter -->
+            <div class="gallery-filter" data-aos="fade-up">
+                <button class="gallery-filter__btn active" data-filter="sve">
+                    <i class="fas fa-th"></i>
+                    Sve
+                </button>
+                <button class="gallery-filter__btn" data-filter="enterijer">
+                    <i class="fas fa-couch"></i>
+                    Enterijer
+                </button>
+                <button class="gallery-filter__btn" data-filter="hrana">
+                    <i class="fas fa-utensils"></i>
+                    Hrana
+                </button>
+                <button class="gallery-filter__btn" data-filter="pice">
+                    <i class="fas fa-beer"></i>
+                    Piće
+                </button>
+                <button class="gallery-filter__btn" data-filter="dogadjaji">
+                    <i class="fas fa-calendar-alt"></i>
+                    Događaji
+                </button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" data-aos="fade-up" data-aos-delay="100">
+                <!-- Enterijer -->
+                <div class="gallery-item" data-category="enterijer">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=600" alt="Pub Enterijer">
+                    <div class="gallery-item__overlay">
+                        <span class="gallery-item__title">Glavni Prostor</span>
+                        <span class="gallery-item__category">Enterijer</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="enterijer">
+                    <img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?w=600" alt="Bar">
+                    <div class="gallery-item__overlay">
+                        <span class="gallery-item__title">Bar</span>
+                        <span class="gallery-item__category">Enterijer</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="enterijer">
+                    <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=600" alt="VIP Sekcija">
+                    <div class="gallery-item__overlay">
+                        <span class="gallery-item__title">VIP Sekcija</span>
+                        <span class="gallery-item__category">Enterijer</span>
+                    </div>
+                </div>
+
+                <!-- Hrana -->
+                <div class="gallery-item" data-category="hrana">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600" alt="Burger">
+                    <div class="gallery-item__overlay">
+                        <span class="gallery-item__title">Signature Burger</span>
+                        <span class="gallery-item__category">Hrana</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="hrana">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" alt="Pizza">
+                    <div class="gallery-item__overlay">
+                        <span class="gallery-item__title">Pizza</span>
+                        <span class="gallery-item__category">Hrana</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="hrana">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600" alt="BBQ Rebarca">
+                    <div class="gallery-item__overlay">
+                        <span class="gallery-item__title">BBQ Rebarca</span>
+                        <span class="gallery-item__category">Hrana</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="hrana">
+                    <img src="https://images.unsplash.com/photo-1546833998-877b37c2e5c6?w=600" alt="Wings">
+                    <div class="gallery-item__overlay">
+                        <span class="gallery-item__title">Buffalo Wings</span>
+                        <span class="gallery-item__category">Hrana</span>
+                    </div>
+                </div>
+
+                <!-- Piće -->
+                <div class="gallery-item" data-category="pice">
+                    <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=600" alt="Craft Pivo">
+                    <div class="gallery-item__overlay">
+                        <span class="gallery-item__title">Craft Pivo</span>
+                        <span class="gallery-item__category">Piće</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="pice">
+                    <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?w=600" alt="Guinness">
+                    <div class="gallery-item__overlay">
+                        <span class="gallery-item__title">Guinness</span>
+                        <span class="gallery-item__category">Piće</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="pice">
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600" alt="Kokteli">
+                    <div class="gallery-item__overlay">
+                        <span class="gallery-item__title">Kokteli</span>
+                        <span class="gallery-item__category">Piće</span>
+                    </div>
+                </div>
+
+                <!-- Događaji -->
+                <div class="gallery-item" data-category="dogadjaji">
+                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600" alt="Živa Muzika">
+                    <div class="gallery-item__overlay">
+                        <span class="gallery-item__title">Živa Muzika</span>
+                        <span class="gallery-item__category">Događaji</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="dogadjaji">
+                    <img src="https://images.unsplash.com/photo-1575444758702-4a6b9222336e?w=600" alt="Kviz Veče">
+                    <div class="gallery-item__overlay">
+                        <span class="gallery-item__title">Kviz Veče</span>
+                        <span class="gallery-item__category">Događaji</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta section">
+        <div class="cta__bg"></div>
+        <div class="container">
+            <div class="cta__content" data-aos="zoom-in">
+                <h2 class="cta__title">Želite ovakav sajt?</h2>
+                <p class="cta__text">Informacije: kontaktirajte nas za detalje.</p>
+                <div class="cta__buttons">
+                    <a href="https://svilenkovic.com/contact" target="_blank" rel="noopener" class="btn btn--primary btn--large">
+                        <i class="fas fa-shopping-cart"></i> Kontakt
+                    </a>
+                    <a href="tel:+381612248989" class="btn btn--outline btn--large">
+                        <i class="fas fa-phone"></i> +381 61 224 8989
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__grid">
+                    <div class="footer__col">
+                        <a href="index" class="footer__logo">
+                            <i class="fas fa-beer-mug-empty"></i>
+                            <span>Pub<strong>Demo</strong></span>
+                        </a>
+                        <p class="footer__desc">
+                            Demo demo za pub, kafić ili restoran. Cena: kontaktirajte nas za detalje!
+                        </p>
+                        <div class="footer__social">
+                            <a href="https://svilenkovic.com" target="_blank" rel="noopener" aria-label="Website">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                            <a href="mailto:dimitrije@svilenkovic.com" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:+381612248989" aria-label="Phone">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__title">Stranice Demoa</h4>
+                        <ul class="footer__links">
+                            <li><a href="index">Početna</a></li>
+                            <li><a href="meni">Meni</a></li>
+                            <li><a href="porudzbine">Poruči Online</a></li>
+                            <li><a href="o-nama">O Nama</a></li>
+                            <li><a href="galerija">Galerija</a></li>
+                            <li><a href="kontakt">Kontakt</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__title">Kontakt</h4>
+                        <ul class="footer__contact">
+                            <li>
+                                <i class="fas fa-globe"></i>
+                                <a href="https://svilenkovic.com" target="_blank" rel="noopener">svilenkovic.com</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+381612248989">+381 61 224 8989</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:dimitrije@svilenkovic.com">dimitrije@svilenkovic.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Prijatelji web stranice -->
+                </div>
+
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2024 Pub Demo. Razvijeno od strane <a href="https://svilenkovic.com" target="_blank" rel="noopener" class="footer-link-orange">Svilenkovic.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="galerija.js"></script>
+<script id="demo-notice-script">(function(){if(document.querySelector("[data-demo-notice='1']")){return;}var n=document.createElement("div");n.setAttribute("data-demo-notice","1");n.textContent='Ovo je DEMO sajt za prezentaciju izgleda i funkcionalnosti.';n.style.position="fixed";n.style.top="0";n.style.left="0";n.style.right="0";n.style.zIndex="2147483647";n.style.padding="10px 14px";n.style.fontFamily="system-ui,-apple-system,Segoe UI,Arial,sans-serif";n.style.fontSize="12px";n.style.lineHeight="1.4";n.style.textAlign="center";n.style.background="#111";n.style.color="#f5f5f5";n.style.borderBottom="1px solid rgba(255,255,255,0.15)";document.body.style.paddingTop="48px";document.body.appendChild(n);})();</script>
+</body>
+</html>
+
+
+

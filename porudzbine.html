@@ -1,0 +1,518 @@
+﻿<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Poručite hranu i piće iz Pub Demoa online. Brza dostava, sveža hrana, kvalitetna usluga. Beograd.">
+    <meta name="keywords" content="porudžbina online, dostava hrane beograd, Pub Demo dostava">
+    <title>Poruči Online | Pub Demo Beograd</title>
+    
+    <link rel="icon" type="image/x-icon" href="https://svilenkovic.com/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="meni.css">
+    <link rel="stylesheet" href="porudzbine.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header header--solid" id="header">
+        <nav class="nav container">
+            <a href="index" class="nav__logo">
+                <i class="fas fa-beer-mug-empty"></i>
+                <span>Pub<strong>Demo</strong></span>
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index" class="nav__link">Početna</a></li>
+                    <li class="nav__item"><a href="meni" class="nav__link">Meni</a></li>
+                    <li class="nav__item"><a href="porudzbine" class="nav__link active">Poruči Online</a></li>
+                    <li class="nav__item"><a href="o-nama" class="nav__link">O Nama</a></li>
+                    <li class="nav__item"><a href="galerija" class="nav__link">Galerija</a></li>
+                    <li class="nav__item"><a href="kontakt" class="nav__link">Kontakt</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="nav__actions">
+                <a href="#" class="nav__cart" id="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart__count" id="cart-count">0</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle"><i class="fas fa-bars"></i></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header page-header--small">
+        <div class="page-header__overlay"></div>
+        <div class="container">
+            <div class="page-header__content">
+                <h1 class="page-header__title" data-aos="fade-up">Poruči Online</h1>
+                <p class="page-header__subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Izaberite omiljenu hranu i piće, mi donosimo do vas!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Notice Banner -->
+    <section class="demo-notice-banner">
+        <div class="container">
+            <p>
+                <i class="fas fa-info-circle"></i>
+                Ovo je <strong>DEMO prikaz</strong> sistema za online narudžbe. Želite ovakav sajt za vaš pub/restoran?
+                <a href="https://svilenkovic.com/contact" target="_blank" rel="noopener">Kontakt →</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section class="order-section section">
+        <div class="container">
+            <div class="order-grid">
+                
+                <!-- Menu Selection -->
+                <div class="order-menu" data-aos="fade-right">
+                    <h2 class="order-menu__title">
+                        <i class="fas fa-utensils"></i> Izaberite iz menija
+                    </h2>
+
+                    <!-- Category Filter -->
+                    <div class="order-categories">
+                        <button class="category-btn active" data-category="all">Sve</button>
+                        <button class="category-btn" data-category="burgeri">Burgeri</button>
+                        <button class="category-btn" data-category="pizza">Pizza</button>
+                        <button class="category-btn" data-category="predjela">Predjela</button>
+                        <button class="category-btn" data-category="glavna">Glavna Jela</button>
+                        <button class="category-btn" data-category="pice">Piće</button>
+                        <button class="category-btn" data-category="deserti">Deserti</button>
+                    </div>
+
+                    <!-- Menu Items Grid -->
+                    <div class="order-items" id="order-items">
+                        
+                        <!-- Burgeri -->
+                        <div class="order-item" data-category="burgeri">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=200" alt="Nosati Burger">
+                            <div class="order-item__content">
+                                <h4>Nosati Burger</h4>
+                                <p>200g juneće meso, cheddar, slanina, karamelizovani luk</p>
+                                <div class="order-item__footer">
+                                    <span class="order-item__price">890 RSD</span>
+                                    <button class="btn btn--small add-to-cart" data-name="Nosati Burger" data-price="890">
+                                        <i class="fas fa-plus"></i> Dodaj
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-item" data-category="burgeri">
+                            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=200" alt="Classic Burger">
+                            <div class="order-item__content">
+                                <h4>Classic Burger</h4>
+                                <p>180g juneće meso, zelena salata, paradajz, luk</p>
+                                <div class="order-item__footer">
+                                    <span class="order-item__price">750 RSD</span>
+                                    <button class="btn btn--small add-to-cart" data-name="Classic Burger" data-price="750">
+                                        <i class="fas fa-plus"></i> Dodaj
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-item" data-category="burgeri">
+                            <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=200" alt="BBQ Burger">
+                            <div class="order-item__content">
+                                <h4>BBQ Burger</h4>
+                                <p>200g juneće meso, cheddar, prženi luk, BBQ sos</p>
+                                <div class="order-item__footer">
+                                    <span class="order-item__price">920 RSD</span>
+                                    <button class="btn btn--small add-to-cart" data-name="BBQ Burger" data-price="920">
+                                        <i class="fas fa-plus"></i> Dodaj
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-item" data-category="burgeri">
+                            <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=200" alt="Chicken Burger">
+                            <div class="order-item__content">
+                                <h4>Chicken Burger</h4>
+                                <p>Hrskava piletina, zelena salata, tartar sos</p>
+                                <div class="order-item__footer">
+                                    <span class="order-item__price">790 RSD</span>
+                                    <button class="btn btn--small add-to-cart" data-name="Chicken Burger" data-price="790">
+                                        <i class="fas fa-plus"></i> Dodaj
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pizza -->
+                        <div class="order-item" data-category="pizza">
+                            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=200" alt="Margherita">
+                            <div class="order-item__content">
+                                <h4>Margherita</h4>
+                                <p>Pelat, mocarela, bosiljak, maslinovo ulje</p>
+                                <div class="order-item__footer">
+                                    <span class="order-item__price">790 RSD</span>
+                                    <button class="btn btn--small add-to-cart" data-name="Pizza Margherita" data-price="790">
+                                        <i class="fas fa-plus"></i> Dodaj
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-item" data-category="pizza">
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=200" alt="Pub Style">
+                            <div class="order-item__content">
+                                <h4>Pub Style Pizza</h4>
+                                <p>Pelat, mocarela, pečenica, pečurke, masline</p>
+                                <div class="order-item__footer">
+                                    <span class="order-item__price">990 RSD</span>
+                                    <button class="btn btn--small add-to-cart" data-name="Pizza Pub Style" data-price="990">
+                                        <i class="fas fa-plus"></i> Dodaj
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-item" data-category="pizza">
+                            <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=200" alt="Pepperoni">
+                            <div class="order-item__content">
+                                <h4>Pepperoni</h4>
+                                <p>Pelat, mocarela, ljuta kobasica pepperoni</p>
+                                <div class="order-item__footer">
+                                    <span class="order-item__price">950 RSD</span>
+                                    <button class="btn btn--small add-to-cart" data-name="Pizza Pepperoni" data-price="950">
+                                        <i class="fas fa-plus"></i> Dodaj
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Predjela -->
+                        <div class="order-item" data-category="predjela">
+                            <img src="https://images.unsplash.com/photo-1546833998-877b37c2e5c6?w=200" alt="Buffalo Wings">
+                            <div class="order-item__content">
+                                <h4>Buffalo Wings</h4>
+                                <p>12 komada hrskave piletine, buffalo sos</p>
+                                <div class="order-item__footer">
+                                    <span class="order-item__price">750 RSD</span>
+                                    <button class="btn btn--small add-to-cart" data-name="Buffalo Wings" data-price="750">
+                                        <i class="fas fa-plus"></i> Dodaj
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-item" data-category="predjela">
+                            <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=200" alt="Nachos">
+                            <div class="order-item__content">
+                                <h4>Nachos Grande</h4>
+                                <p>Tortilja čips, cheddar sos, jalapeño, guacamole</p>
+                                <div class="order-item__footer">
+                                    <span class="order-item__price">690 RSD</span>
+                                    <button class="btn btn--small add-to-cart" data-name="Nachos Grande" data-price="690">
+                                        <i class="fas fa-plus"></i> Dodaj
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-item" data-category="predjela">
+                            <img src="https://images.unsplash.com/photo-1531749668029-2db88e4276c7?w=200" alt="Onion Rings">
+                            <div class="order-item__content">
+                                <h4>Onion Rings</h4>
+                                <p>Hrskavi prženi lukovi, aioli sos</p>
+                                <div class="order-item__footer">
+                                    <span class="order-item__price">450 RSD</span>
+                                    <button class="btn btn--small add-to-cart" data-name="Onion Rings" data-price="450">
+                                        <i class="fas fa-plus"></i> Dodaj
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Glavna Jela -->
+                        <div class="order-item" data-category="glavna">
+                            <img src="https://images.unsplash.com/photo-1585325701165-351af916e581?w=200" alt="Ćevapi">
+                            <div class="order-item__content">
+                                <h4>Ćevapi u Lepinji</h4>
+                                <p>10 ćevapa, kajmak, ajvar, luk</p>
+                                <div class="order-item__footer">
+                                    <span class="order-item__price">850 RSD</span>
+                                    <button class="btn btn--small add-to-cart" data-name="Ćevapi u Lepinji" data-price="850">
+                                        <i class="fas fa-plus"></i> Dodaj
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-item" data-category="glavna">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=200" alt="BBQ Rebarca">
+                            <div class="order-item__content">
+                                <h4>BBQ Rebarca</h4>
+                                <p>Svinjska rebarca marinirana 24h, coleslaw</p>
+                                <div class="order-item__footer">
+                                    <span class="order-item__price">1290 RSD</span>
+                                    <button class="btn btn--small add-to-cart" data-name="BBQ Rebarca" data-price="1290">
+                                        <i class="fas fa-plus"></i> Dodaj
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-item" data-category="glavna">
+                            <img src="https://images.unsplash.com/photo-1460306855393-0410f61241c7?w=200" alt="Fish & Chips">
+                            <div class="order-item__content">
+                                <h4>Fish & Chips</h4>
+                                <p>Pohovan bakalar, pomfrit, tartar sos</p>
+                                <div class="order-item__footer">
+                                    <span class="order-item__price">990 RSD</span>
+                                    <button class="btn btn--small add-to-cart" data-name="Fish & Chips" data-price="990">
+                                        <i class="fas fa-plus"></i> Dodaj
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Piće -->
+                        <div class="order-item" data-category="pice">
+                            <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=200" alt="Kabinet IPA">
+                            <div class="order-item__content">
+                                <h4>Kabinet IPA 0.5L</h4>
+                                <p>Domaće craft pivo, 6.2% ABV</p>
+                                <div class="order-item__footer">
+                                    <span class="order-item__price">450 RSD</span>
+                                    <button class="btn btn--small add-to-cart" data-name="Kabinet IPA 0.5L" data-price="450">
+                                        <i class="fas fa-plus"></i> Dodaj
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-item" data-category="pice">
+                            <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?w=200" alt="Guinness">
+                            <div class="order-item__content">
+                                <h4>Guinness 0.5L</h4>
+                                <p>Irsko crno pivo, 4.2% ABV</p>
+                                <div class="order-item__footer">
+                                    <span class="order-item__price">520 RSD</span>
+                                    <button class="btn btn--small add-to-cart" data-name="Guinness 0.5L" data-price="520">
+                                        <i class="fas fa-plus"></i> Dodaj
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-item" data-category="pice">
+                            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=200" alt="Coca Cola">
+                            <div class="order-item__content">
+                                <h4>Coca Cola 0.25L</h4>
+                                <p>Osvežavajući bezalkoholni napitak</p>
+                                <div class="order-item__footer">
+                                    <span class="order-item__price">180 RSD</span>
+                                    <button class="btn btn--small add-to-cart" data-name="Coca Cola 0.25L" data-price="180">
+                                        <i class="fas fa-plus"></i> Dodaj
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Deserti -->
+                        <div class="order-item" data-category="deserti">
+                            <img src="https://images.unsplash.com/photo-1564355808539-22fda35bed7e?w=200" alt="Brownie">
+                            <div class="order-item__content">
+                                <h4>Brownie sa Sladoledom</h4>
+                                <p>Topli brownie, vanila sladoled, čokoladni sos</p>
+                                <div class="order-item__footer">
+                                    <span class="order-item__price">520 RSD</span>
+                                    <button class="btn btn--small add-to-cart" data-name="Brownie sa Sladoledom" data-price="520">
+                                        <i class="fas fa-plus"></i> Dodaj
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-item" data-category="deserti">
+                            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=200" alt="Cheesecake">
+                            <div class="order-item__content">
+                                <h4>Cheesecake</h4>
+                                <p>New York style, sos od šumskog voća</p>
+                                <div class="order-item__footer">
+                                    <span class="order-item__price">450 RSD</span>
+                                    <button class="btn btn--small add-to-cart" data-name="Cheesecake" data-price="450">
+                                        <i class="fas fa-plus"></i> Dodaj
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary" data-aos="fade-left">
+                    <div class="order-summary__sticky">
+                        <h2 class="order-summary__title">
+                            <i class="fas fa-shopping-cart"></i> Vaša Porudžbina
+                        </h2>
+
+                        <div class="order-summary__items" id="order-summary-items">
+                            <div class="order-summary__empty">
+                                <i class="fas fa-shopping-basket"></i>
+                                <p>Vaša korpa je prazna</p>
+                                <span>Dodajte proizvode iz menija</span>
+                            </div>
+                        </div>
+
+                        <div class="order-summary__totals">
+                            <div class="order-summary__row">
+                                <span>Proizvodi:</span>
+                                <span id="subtotal">0 RSD</span>
+                            </div>
+                            <div class="order-summary__row">
+                                <span>Dostava:</span>
+                                <span id="delivery">0 RSD</span>
+                            </div>
+                            <div class="order-summary__row order-summary__row--total">
+                                <span>Ukupno:</span>
+                                <span id="total">0 RSD</span>
+                            </div>
+                        </div>
+
+                        <div class="order-summary__info">
+                            <p><i class="fas fa-truck"></i> Besplatna dostava za porudžbine preko 2000 RSD</p>
+                            <p><i class="fas fa-clock"></i> Vreme dostave: 30-45 minuta</p>
+                        </div>
+
+                        <button class="btn btn--primary btn--block btn--large" id="checkout-btn" disabled>
+                            <i class="fas fa-credit-card"></i> Nastavi na plaćanje
+                        </button>
+
+                        <!-- Demo Notice -->
+                        <div class="demo-order-notice">
+                            <p class="demo-order-notice__title">
+                                <i class="fas fa-info-circle"></i> Ovo je demo prikaz
+                            </p>
+                            <p class="demo-order-notice__text">
+                                Želite ovakav sistem za vaš pub/restoran?
+                            </p>
+                            <a href="https://svilenkovic.com/contact" target="_blank" rel="noopener" class="btn btn--small btn--orange">
+                                <i class="fas fa-shopping-cart"></i> Kontakt
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Modal (Demo) -->
+    <div class="modal" id="checkout-modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" id="modal-close" title="Zatvori">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="demo-empty-cart">
+                <div class="demo-empty-cart__icon">
+                    <i class="fas fa-store"></i>
+                </div>
+                <h2 class="demo-empty-cart__title">Demo Verzija</h2>
+                <p class="demo-empty-cart__text">
+                    Ovo je demonstracija sistema za online narudžbe.<br>
+                    Ako želite sličan sistem, kontaktirajte nas za izradu.
+                </p>
+                <div class="demo-empty-cart__buttons">
+                    <a href="https://svilenkovic.com/contact" target="_blank" rel="noopener" class="btn btn--primary">
+                        <i class="fas fa-shopping-cart"></i> Kontakt
+                    </a>
+                    <a href="https://svilenkovic.com/contact" target="_blank" rel="noopener" class="btn btn--outline">
+                        <i class="fas fa-envelope"></i> Kontaktiraj Nas
+                    </a>
+                </div>
+                <div class="demo-empty-cart__footer">
+                    <p>
+                        <strong>Informacije:</strong> kontaktirajte nas za detalje
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__grid">
+                    <div class="footer__col">
+                        <a href="index" class="footer__logo">
+                            <i class="fas fa-beer-mug-empty"></i>
+                            <span>Pub<strong>Demo</strong></span>
+                        </a>
+                        <p class="footer__desc">
+                            Vaše omiljeno mesto za craft pivo, sočne burgere i nezaboravne trenutke u srcu Beograda.
+                        </p>
+                        <div class="footer__social">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__title">Brzi Linkovi</h4>
+                        <ul class="footer__links">
+                            <li><a href="index">Početna</a></li>
+                            <li><a href="meni">Meni</a></li>
+                            <li><a href="porudzbine">Poruči Online</a></li>
+                            <li><a href="kontakt">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__title">Radno Vreme</h4>
+                        <ul class="footer__hours">
+                            <li><span>Pon - Čet</span><span>12:00 - 00:00</span></li>
+                            <li><span>Pet - Sub</span><span>12:00 - 02:00</span></li>
+                            <li><span>Nedelja</span><span>14:00 - 00:00</span></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__title">Kontakt</h4>
+                        <ul class="footer__contact">
+                            <li><i class="fas fa-phone"></i><a href="tel:+381111234567">+381 11 123 4567</a></li>
+                            <li><i class="fas fa-envelope"></i><a href="mailto:info@pubsablon.rs">info@pubsablon.rs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <!-- Prijatelji web stranice -->
+                </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2024 Pub Demo. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="porudzbine.js"></script>
+<script id="demo-notice-script">(function(){if(document.querySelector("[data-demo-notice='1']")){return;}var n=document.createElement("div");n.setAttribute("data-demo-notice","1");n.textContent='Ovo je DEMO sajt za prezentaciju izgleda i funkcionalnosti.';n.style.position="fixed";n.style.top="0";n.style.left="0";n.style.right="0";n.style.zIndex="2147483647";n.style.padding="10px 14px";n.style.fontFamily="system-ui,-apple-system,Segoe UI,Arial,sans-serif";n.style.fontSize="12px";n.style.lineHeight="1.4";n.style.textAlign="center";n.style.background="#111";n.style.color="#f5f5f5";n.style.borderBottom="1px solid rgba(255,255,255,0.15)";document.body.style.paddingTop="48px";document.body.appendChild(n);})();</script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,16 @@
+# Robots.txt za Nosati Pub Beograd
+# https://www.nosatipub.rs
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.nosatipub.rs/sitemap.xml
+
+# Disallow admin i private folders
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Cache directives
+Crawl-delay: 10

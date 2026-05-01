@@ -1,0 +1,479 @@
+﻿<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pub Demo Beograd - Saznajte više o nama, našoj priči, timu i atmosferi koja nas čini posebnim. Tradicija i kvalitet od osnivanja.">
+    <meta name="keywords" content="Pub Demo, o nama, priča, tim, Beograd, pub, istorija">
+    <meta name="author" content="Pub Demo Beograd">
+    
+    <title>O Nama | Pub Demo Beograd</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="o-nama.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header header--solid" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index" class="nav__logo">
+                    <i class="fas fa-beer-mug-empty"></i>
+                    <span>Pub Demo</span>
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index" class="nav__link">Početna</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="meni" class="nav__link">Meni</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="porudzbine" class="nav__link">Poruči Online</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="o-nama" class="nav__link active">O Nama</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="galerija" class="nav__link">Galerija</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="kontakt" class="nav__link">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav__actions">
+                    <a href="porudzbine" class="btn btn--primary btn--sm">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>Poruči</span>
+                    </a>
+                    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header__overlay"></div>
+        <div class="container">
+            <div class="page-header__content" data-aos="fade-up">
+                <h1 class="page-header__title">O Nama</h1>
+                <p class="page-header__subtitle">Upoznajte priču iza omiljenog beogradskog puba</p>
+                <nav class="breadcrumb">
+                    <a href="index">Početna</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>O Nama</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="section story-section">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-image" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=600" alt="Unutrašnjost Pub Demo-a">
+                    <div class="story-image__accent">
+                        <span class="story-years">10+</span>
+                        <span>godina tradicije</span>
+                    </div>
+                </div>
+                <div class="story-content" data-aos="fade-left">
+                    <span class="section-tag"><i class="fas fa-book-open"></i> Naša Priča</span>
+                    <h2 class="section-title">Od Ideje do Omiljenog Mesta u Gradu</h2>
+                    <p>
+                        Pub Demo je nastao iz ljubavi prema dobroj hrani, kvalitetnom piću i toploj atmosferi. 
+                        Osnovan davne godine u srcu Beograda, brzo je postao omiljeno mesto za sve koji traže 
+                        autentično pub iskustvo.
+                    </p>
+                    <p>
+                        Naš naziv "Nosati" ima posebnu priču - nastao je kao šala među prijateljima osnivačima, 
+                        a ostao je kao simbol našeg pristupa: ne uzimamo se previše ozbiljno, ali kvalitet 
+                        shvatamo krajnje ozbiljno.
+                    </p>
+                    <p>
+                        Danas, nakon više od decenije, nastavljamo da pišemo priču o mestu gde se stranci 
+                        pretvaraju u prijatelje, a prijatelji u porodicu.
+                    </p>
+                    <div class="story-stats">
+                        <div class="story-stat">
+                            <i class="fas fa-users"></i>
+                            <span class="story-stat__number">50,000+</span>
+                            <span class="story-stat__label">Zadovoljnih gostiju</span>
+                        </div>
+                        <div class="story-stat">
+                            <i class="fas fa-utensils"></i>
+                            <span class="story-stat__number">100+</span>
+                            <span class="story-stat__label">Jela na meniju</span>
+                        </div>
+                        <div class="story-stat">
+                            <i class="fas fa-beer"></i>
+                            <span class="story-stat__number">30+</span>
+                            <span class="story-stat__label">Vrsta piva</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section values-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-tag"><i class="fas fa-heart"></i> Naše Vrednosti</span>
+                <h2 class="section-title">Šta Nas Čini Posebnim</h2>
+                <p class="section-subtitle">
+                    Principi koji vode naš tim svaki dan i čine Pub Demo mestom koje volite
+                </p>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="value-card__icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Gostoljubivost</h3>
+                    <p>
+                        Svaki gost je poseban. Trudimo se da se svako oseća dobrodošlo, 
+                        bilo da je prvi put kod nas ili redovan gost.
+                    </p>
+                </div>
+
+                <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="value-card__icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Kvalitet</h3>
+                    <p>
+                        Od namirnica do gotovih jela, od točenog piva do koktela - 
+                        ne pravimo kompromise kada je kvalitet u pitanju.
+                    </p>
+                </div>
+
+                <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="value-card__icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Inovacija</h3>
+                    <p>
+                        Konstantno unapređujemo meni i uslugu, prateći trendove 
+                        ali čuvajući našu prepoznatljivu pub tradiciju.
+                    </p>
+                </div>
+
+                <div class="value-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="value-card__icon">
+                        <i class="fas fa-people-group"></i>
+                    </div>
+                    <h3>Zajednica</h3>
+                    <p>
+                        Više smo od restorana - mi smo deo lokalne zajednice. 
+                        Organizujemo događaje i podržavamo lokalne inicijative.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section team-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-tag"><i class="fas fa-user-group"></i> Naš Tim</span>
+                <h2 class="section-title">Upoznajte Ljude Iza Pub Demo-a</h2>
+                <p class="section-subtitle">
+                    Posvećen tim profesionalaca koji čine svaku vašu posetu nezaboravnom
+                </p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-card__image">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400" alt="Marko Petrović">
+                        <div class="team-card__social">
+                            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card__content">
+                        <h3>Marko Petrović</h3>
+                        <span>Vlasnik & Osnivač</span>
+                        <p>Vizionar koji stoji iza koncepta Pub Demo-a. Sa 15+ godina iskustva u ugostiteljstvu.</p>
+                    </div>
+                </div>
+
+                <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-card__image">
+                        <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=400" alt="Ana Jovanović">
+                        <div class="team-card__social">
+                            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card__content">
+                        <h3>Ana Jovanović</h3>
+                        <span>Menadžer</span>
+                        <p>Brine o svakodnevnom funkcionisanju i da svaki gost ode sa osmehom.</p>
+                    </div>
+                </div>
+
+                <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-card__image">
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400" alt="Nikola Đorđević">
+                        <div class="team-card__social">
+                            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card__content">
+                        <h3>Nikola Đorđević</h3>
+                        <span>Šef Kuhinje</span>
+                        <p>Kulinarni genije odgovoran za sve ukuse koji izlaze iz naše kuhinje.</p>
+                    </div>
+                </div>
+
+                <div class="team-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="team-card__image">
+                        <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=400" alt="Stefan Nikolić">
+                        <div class="team-card__social">
+                            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card__content">
+                        <h3>Stefan Nikolić</h3>
+                        <span>Glavni Barmen</span>
+                        <p>Majstor koktela i tačenja piva. Zna recept za svaki ukus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atmosphere Section -->
+    <section class="section atmosphere-section">
+        <div class="atmosphere-bg"></div>
+        <div class="container">
+            <div class="atmosphere-content" data-aos="fade-up">
+                <span class="section-tag"><i class="fas fa-couch"></i> Atmosfera</span>
+                <h2 class="section-title section-title--light">Više od Restorana - <br>To Je Iskustvo</h2>
+                <p>
+                    Zamislite toplo, prijatno mesto sa drvenim detaljima, prigušenim svetlom 
+                    i mirisom svežeg piva. Zvuci razgovora, smeha i povremeno live muzike 
+                    ispunjavaju prostor. To je Pub Demo.
+                </p>
+                <div class="atmosphere-features">
+                    <div class="atmosphere-feature">
+                        <i class="fas fa-music"></i>
+                        <span>Live Muzika Vikendom</span>
+                    </div>
+                    <div class="atmosphere-feature">
+                        <i class="fas fa-tv"></i>
+                        <span>Sportski Prenosi</span>
+                    </div>
+                    <div class="atmosphere-feature">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Kviz Večeri</span>
+                    </div>
+                    <div class="atmosphere-feature">
+                        <i class="fas fa-fire"></i>
+                        <span>Topla Atmosfera</span>
+                    </div>
+                </div>
+                <a href="galerija" class="btn btn--primary btn--lg">
+                    <i class="fas fa-images"></i>
+                    Pogledajte Galeriju
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="section timeline-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-tag"><i class="fas fa-clock-rotate-left"></i> Naš Put</span>
+                <h2 class="section-title">Kroz Godine</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline__item" data-aos="fade-up">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__year">2013</span>
+                        <h3>Početak Priče</h3>
+                        <p>Otvaranje prvog Pub Demo-a u srcu Beograda sa samo 10 stolova.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item" data-aos="fade-up">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__year">2015</span>
+                        <h3>Proširenje Prostora</h3>
+                        <p>Renoviranje i proširenje kapaciteta. Dodavanje letnnje bašte.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item" data-aos="fade-up">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__year">2018</span>
+                        <h3>Nagrada za Kvalitet</h3>
+                        <p>Dobijanje nagrade za najbolji pub u Beogradu od strane TripAdvisor korisnika.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item" data-aos="fade-up">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__year">2020</span>
+                        <h3>Online Porudžbine</h3>
+                        <p>Lansiranje sistema za online porudžbine i dostavu.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item" data-aos="fade-up">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__year">2023</span>
+                        <h3>Nova Era</h3>
+                        <p>Renoviranje enterijera i proširenje menija sa preko 100 novih jela.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Želite Ovakav Sajt?</h2>
+                <p>Ovaj deo prikazuje kako može izgledati završna CTA sekcija na modernom sajtu.</p>
+                <div class="cta-buttons">
+                    <a href="https://svilenkovic.com/contact" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
+                        <i class="fas fa-shopping-cart"></i>
+                        Kontakt
+                    </a>
+                    <a href="tel:+381612248989" class="btn btn--outline btn--lg">
+                        <i class="fas fa-phone"></i>
+                        +381 61 224 8989
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="index" class="footer__logo">
+                        <i class="fas fa-beer-mug-empty"></i>
+                        <span>Pub Demo</span>
+                    </a>
+                    <p>
+                        Vaše omiljeno mesto za opuštanje, dobru hranu i 
+                        nezaboravne trenutke u srcu Beograda.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Brzi Linkovi</h4>
+                    <ul>
+                        <li><a href="index">Početna</a></li>
+                        <li><a href="meni">Meni</a></li>
+                        <li><a href="porudzbine">Poruči Online</a></li>
+                        <li><a href="o-nama">O Nama</a></li>
+                        <li><a href="galerija">Galerija</a></li>
+                        <li><a href="kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Knez Mihailova 25, Beograd</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+381111234567">+381 11 123 4567</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@PubDemo.rs">info@PubDemo.rs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__hours">
+                    <h4>Radno Vreme</h4>
+                    <ul>
+                        <li>
+                            <span>Ponedeljak - Četvrtak</span>
+                            <span>12:00 - 00:00</span>
+                        </li>
+                        <li>
+                            <span>Petak - Subota</span>
+                            <span>12:00 - 02:00</span>
+                        </li>
+                        <li>
+                            <span>Nedelja</span>
+                            <span>14:00 - 23:00</span>
+                        </li>
+                    </ul>
+                
+                <!-- Prijatelji web stranice -->
+                </div>
+        <div class="footer__bottom">
+                <p>&copy; 2024 Pub Demo Beograd. Sva prava zadržana.</p>
+                <div class="footer__legal">
+                    <a href="#">Politika Privatnosti</a>
+                    <a href="#">Uslovi Korišćenja</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+<script id="demo-notice-script">(function(){if(document.querySelector("[data-demo-notice='1']")){return;}var n=document.createElement("div");n.setAttribute("data-demo-notice","1");n.textContent='Ovo je DEMO sajt za prezentaciju izgleda i funkcionalnosti.';n.style.position="fixed";n.style.top="0";n.style.left="0";n.style.right="0";n.style.zIndex="2147483647";n.style.padding="10px 14px";n.style.fontFamily="system-ui,-apple-system,Segoe UI,Arial,sans-serif";n.style.fontSize="12px";n.style.lineHeight="1.4";n.style.textAlign="center";n.style.background="#111";n.style.color="#f5f5f5";n.style.borderBottom="1px solid rgba(255,255,255,0.15)";document.body.style.paddingTop="48px";document.body.appendChild(n);})();</script>
+</body>
+</html>
+
+
+
